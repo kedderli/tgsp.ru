@@ -1,0 +1,218 @@
+/*********** START INTERFACE  ***********/
+* {
+	font-family: 'Roboto', sans-serif;
+}
+
+@media (min-width: 576px){
+	.container {
+		max-width: 570px;
+	}
+}
+@media (min-width: 768px){
+	.container {
+		max-width: 750px;
+	}
+}
+@media (min-width: 992px){
+	.container {
+		max-width: 990px;
+	}
+}
+@media (min-width: 1200px){
+	.container {
+		max-width: 1140px;
+	}
+}
+.container {  
+	margin: 0 auto;
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+/*********** END INTERFACE ***********/
+
+/*********** START HOMPAGE MAIN SLIDER ***********/
+.main-hp-slider-wrapper {
+	position: relative;
+}
+.main-hp-slider-list {
+
+}
+.main-hp-slider-item {
+	display: flex;
+	background: #0085C0;
+}
+.main-hp-slider-content {
+	position: relative;
+	flex-basis: 50%;
+	box-sizing: border-box;
+	padding: 5.833vw 9.166vw;
+}
+.main-hp-slider-title {
+	font-weight: bold;
+	font-size: 2.5vw; 
+	line-height: 2.916vw;
+	color: #ffffff;
+	margin-top: 0;
+	margin-bottom: 1.0625em;
+}
+.main-hp-slider-subtitle {
+	font-weight: 300;
+	font-size: 2.5vw;
+	line-height: 2.916vw;
+	color: #FFFFFF;
+	margin: 0;
+}
+.main-hp-slider-btn {
+	padding: 0.666vw 1.666vw;
+	background: #FFFFFF;
+	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 1.25vw;
+	font-weight: bold;
+	font-size: 1.166vw;
+	line-height: 1.333vw;
+	text-transform: uppercase;
+	color: #0D4259;
+	text-decoration: none;
+	position: absolute;
+	bottom: 5.583vw;
+	left: 9.166vw;
+	transform: translateY(100%);
+}
+.main-hp-slider-foto {
+	flex-basis: 50%;
+	overflow: hidden;
+}
+.main-hp-slider-foto img {
+	display: block;
+	min-width: 100%;
+    min-height: 100%;
+}
+.main-hp-slider-prev,
+.main-hp-slider-next {
+	border: none;
+	outline: none;
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 40px;
+	height: 38px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.main-hp-slider-prev.slick-disabled,
+.main-hp-slider-next.slick-disabled {
+	opacity: 0.5;
+}
+.main-hp-slider-prev {
+	left: 0;
+}
+.main-hp-slider-next {
+	right: 0;
+}
+.main-hp-slider-prev svg,
+.main-hp-slider-next svg {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.main-hp-slider-nav {
+	display: flex;
+	position: absolute;
+	bottom: 0;
+	padding-left: 0;
+	left: 50%;
+	transform: translateX(calc(-100% - 45px));
+	margin-bottom: 25px;
+}
+.main-hp-slider-nav li {
+	list-style: none;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+.main-hp-slider-nav li.slick-active button {
+	background-color: #0D4259;
+	border: 2px solid rgba(255, 255, 255, 0.5);
+	padding: 0;
+    box-sizing: content-box;
+}
+.main-hp-slider-nav button {
+	width: 15px;
+	height: 15px;
+	font-size: 0;
+	border-radius: 50%;
+	border: none;
+	outline: none;
+	background-color: #fff;
+}
+@media (max-width: 1140px){ 
+	.main-hp-slider-item {
+		min-height: 450px;
+	}
+	.main-hp-slider-content {
+		padding: 103px 98px;
+	}
+	.main-hp-slider-title {
+		font-size: 30px; 
+		line-height: 35px;
+		margin-bottom: 17px;
+	}
+	.main-hp-slider-subtitle {
+		font-size: 30px;
+		line-height: 35px;
+	}
+	.main-hp-slider-btn {
+		padding: 9px 20px;
+		border-radius: 15px;
+		font-size: 14px;
+		line-height: 16px;
+		bottom: 103px;
+		left: 98px;
+	}
+}
+@media (max-width: 960px){ 
+	.main-hp-slider-content {
+		padding: 145px 47px;
+	}
+	.main-hp-slider-btn {
+		bottom: 145px;
+		left: 47px;
+	}
+}
+@media (max-width: 720px) {
+	.main-hp-slider-item {
+		min-height: 75vw;
+	}
+	.main-hp-slider-content {
+		flex-basis: 100%;
+		padding: 19vw 23.166vw;
+	}
+	.main-hp-slider-title {
+		font-size: 5vw; 
+		line-height: 5.833vw;
+		margin-bottom: 2.833vw;
+	}
+	.main-hp-slider-subtitle {
+		font-size: 5vw;
+		line-height: 5.833vw;
+	}
+	.main-hp-slider-btn {
+		padding: 1.5vw 3.333vw;
+		border-radius: 2.5vw;
+		font-size: 2.33vw;
+		line-height: 2.666vw;
+		bottom: 19vw;
+		left: 23.166vw;
+	}
+	.main-hp-slider-foto {
+		display: none;
+	}
+	.main-hp-slider-nav {
+		transform: translateX(calc(-100% - 45px));
+		left: 100%;
+	}
+}
+/*********** END HOMPAGE MAIN SLIDER ***********/
