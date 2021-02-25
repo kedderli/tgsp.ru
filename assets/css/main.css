@@ -20,7 +20,7 @@
 }
 @media (min-width: 1200px){
 	.container {
-		max-width: 1140px;
+		max-width: 95vw;
 	}
 }
 .container {  
@@ -39,7 +39,7 @@
 	position: relative;
 }
 .main-hp-slider-list {
-
+	margin-bottom: 0px!important;
 }
 .main-hp-slider-item {
 	display: flex;
@@ -101,6 +101,7 @@
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
+	border-radius: 2px;
 }
 .main-hp-slider-prev.slick-disabled,
 .main-hp-slider-next.slick-disabled {
@@ -216,3 +217,287 @@
 	}
 }
 /*********** END HOMPAGE MAIN SLIDER ***********/
+
+/*********** START HOMPAGE DESCRIPTION ***********/
+.description-section-wrapper {
+	position: relative;
+	padding-top: 3.333vw;
+	padding-bottom: 4.166vw;
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(13, 66, 89, 0.1) 67.23%);
+}
+.description-section {
+	display: grid;
+	max-width: 100%;
+	grid-template-columns: auto 29.166vw;
+	grid-template-areas: "content cards"
+						 "content cards" 
+                       	 "image cards";
+	grid-gap: 2.5vw;
+}
+.description-section-content {
+	grid-area: content;
+}
+.description-section-title {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 2.5vw;
+	line-height: 2.916vw;
+	color: #0D4259;
+	padding-left: 1.25vw;
+	padding-top: 1.25vw;
+	padding-bottom: 1.25vw;
+	border-left: 0.333vw solid #0085C0;
+	margin-top: 0;
+	margin-bottom: 1.416vw;
+}
+.descriptiom-section-text {
+	font-weight: 300;
+	font-size: 1.166vw;
+	line-height: 2.166vw;
+	color: #000000;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.descriptiom-section-image {
+	grid-area: image;
+	overflow: hidden;
+}
+.descriptiom-section-image img{
+	min-width: 100%;
+	min-height: 100%;
+}
+.description-cards-list-wrapper {
+	grid-area: cards;
+}
+.description-cards-list {
+	outline: none;
+}
+.description-cards-item {
+	padding: 1.583vw 1.166vw;
+	width: 29.166vw;
+	box-sizing: border-box;
+	background-color: #fff;
+	display: flex;
+}
+.description-cards-list div:not(:last-child) {
+	margin-bottom: 1.5vw;
+}
+.description-cards-list div {
+	outline: none;
+}
+.description-cards-image {
+	margin-right: 2.333vw;
+}
+.description-cards-content {
+
+}
+.description-cards-title {
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 1.5vw;
+	line-height: 1.75vw;
+	color: #0D4259;
+	margin-top: 0;
+	margin-bottom: 1.25vw;
+}
+.description-cards-ul {
+	padding-left: 1.083vw;
+	margin: 0px;
+}
+.description-cards-ul li {
+	list-style: none;
+	font-weight: 300;
+	font-size: 1.166vw;
+	line-height: 2.5vw;
+	color: #000000;
+}
+.description-cards-ul li:not(:last-child) {
+	border-bottom: 0.083vw solid #CCCCCC;
+}
+
+.description-cards-list .slick-slide {
+	outline: none;
+}
+.description-slider-prev,
+.description-slider-next {
+	display: none;
+	border: none;
+	outline: none;
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 40px;
+	height: 38px;
+	position: absolute;
+	bottom: 180px;
+	border-radius: 2px;
+	z-index: 2;
+}
+.description-slider-prev.slick-disabled,
+.description-slider-next.slick-disabled {
+	opacity: 0.5;
+}
+.description-slider-prev {
+	left: 0;
+}
+.description-slider-next {
+	right: 0;
+}
+.description-slider-prev svg,
+.description-slider-next svg {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.description-slider-nav {
+	display: flex;
+	justify-content: center;
+	padding-left: 0;
+	margin: 0;
+}
+.description-slider-nav li {
+	list-style: none;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+.description-slider-nav li.slick-active button {
+	background-color: #0D4259;
+	border: 2px solid #0085C0;
+	padding: 0;
+    box-sizing: content-box;
+}
+.description-slider-nav button {
+	width: 15px;
+	height: 15px;
+	font-size: 0;
+	border-radius: 50%;
+	border: none;
+	outline: none;
+	background-color: #0085C0;
+}
+@media (max-width: 1140px){ 
+	.description-section {
+		grid-template-columns: auto 350px;
+		grid-template-areas: "content content"
+							 "content content"  
+	                       	 "image cards";
+	}
+	.description-section-wrapper {
+		padding-top: 40px;
+		padding-bottom: 50px;
+	}
+	.description-section-title {
+		font-size: 30px;
+		line-height: 35px;
+		padding-left: 15px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		border-left: 4px solid #0085C0;
+		margin-bottom: 17px;
+	}
+	.descriptiom-section-text {
+		font-size: 14px;
+		line-height: 26px;
+		margin-bottom: 0;
+	}
+	.description-cards-item {
+		padding: 19px 14px;
+		width: 350px;
+	}
+	.description-cards-list div:not(:last-child) {
+		margin-bottom: 18px;
+	}
+	.description-cards-image {
+		margin-right: 28px;
+	}
+	.description-cards-title {
+		font-size: 18px;
+		line-height: 21px;
+		margin-bottom: 15px;
+	}
+	.description-cards-ul {
+		padding-left: 13px;
+	}
+	.description-cards-ul li {
+		font-size: 14px;
+		line-height: 30px;
+	}
+	.description-cards-ul li:not(:last-child) {
+		border-bottom: 1px solid #CCCCCC;
+	}
+}
+@media (max-width: 960px){  
+	.description-section {
+		grid-template-columns: auto 330px;
+	}
+	.description-cards-item {
+		width: 330px;
+	}
+}
+@media (max-width: 768px) {
+	.description-section {
+		display: flex;
+		flex-direction: column;
+	}
+	.description-section-title {
+		font-size: 5vw;
+		line-height: 5.833vw;
+		padding-left: 2.5vw;
+		padding-top: 2.5vw;
+		padding-bottom: 2.5vw;
+		border-left: 0.666vw solid #0085C0;
+		margin-bottom: 2.833vw;
+	}
+	.descriptiom-section-image {
+		display: none;
+	}
+	.description-cards-item {
+		margin: 0 auto;
+		padding-left: 5vw;
+		padding-right: 5vw;
+		width: 65vw;
+	}
+	.description-cards-list {
+		margin-bottom: 0!important;
+	}
+	.description-cards-list .slick-slide {
+		margin-bottom: 0!important;
+	}
+	.description-cards-list div:not(:last-child) {
+		margin-bottom: 3vw;
+	}
+	.description-cards-image {
+		margin-right: 10px;
+	}
+	.description-cards-title {
+		margin-bottom: 2.5vw;
+	}
+	.description-cards-ul {
+		padding-left: 2.166vw;
+	}
+	.description-cards-ul li {
+		/*font-size: 2.333vw;
+		line-height: 5vw;*/
+	}
+	.description-cards-ul li:not(:last-child) {
+		border-bottom: 0.166vw solid #CCCCCC;
+	}
+	.description-slider-prev,
+	.description-slider-next {
+		display: block;
+	}
+}
+@media (max-width: 500px) { 
+	.description-cards-item {
+		padding: 10px;
+		width: auto;
+		justify-content: center;
+	}
+	.description-cards-image svg {
+		width: 50px;
+	}
+	.description-slider-prev,
+	.description-slider-next {
+		bottom: 150px;
+	}
+}
+/*********** END HOMPAGE DESCRIPTION ***********/
