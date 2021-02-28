@@ -1,3 +1,21 @@
+$(".header-menu-open").click(function() {
+	$("body").toggleClass("no-scroll");
+	$(".header").toggleClass("active");
+	$(".header-menu-drop").toggleClass("open");
+});
+
+$(window).scroll(function() {
+	if($(window).outerWidth() > 992) {
+		if($(window).scrollTop() >= 100) {
+			$(".header-copyright").addClass("d-none");
+			$(".header-menu").addClass("show");
+		} else {
+			$(".header-copyright").removeClass("d-none");
+			$(".header-menu").removeClass("show");
+		}
+	}
+});
+
 $('.main-hp-slider-list').slick({
 	dots: true,
 	infinite: false,
