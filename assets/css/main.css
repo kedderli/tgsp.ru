@@ -33,9 +33,63 @@
 	        box-sizing: border-box;
 }
 .content {
-	padding-top: 55px;
+	padding-top: 5.833vw;
+}
+@media (max-width: 1200px){
+	.content {
+		padding-top: 55px;
+	}
 }
 /*********** END INTERFACE ***********/
+
+/*********** START BREADCRUMBS ***********/
+.breadcrumbs-wrapper {
+	margin-top: 1.666vw;
+	margin-bottom: 1.666vw;
+}
+.breadcrumbs-wrapper ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+.breadcrumbs-wrapper li,
+.breadcrumbs-wrapper a {
+	list-style: none;
+	font-weight: 200;
+	font-size: 1.333vw;
+	line-height: 1.583vw;
+	color: #000000;
+	text-decoration: none;
+}
+.breadcrumbs-wrapper a:hover {
+	text-decoration: underline;
+}
+.breadcrumbs-wrapper li:not(:first-child) {
+	margin-left: 0.833vw;
+}
+.breadcrumbs-wrapper li:not(:first-child):before {
+	content: "\\";
+	margin-right: 0.833vw;
+}
+@media (max-width: 1200px){
+	.breadcrumbs-wrapper {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.breadcrumbs-wrapper li,
+	.breadcrumbs-wrapper a {
+		font-size: 16px;
+		line-height: 19px;
+	}
+	.breadcrumbs-wrapper li:not(:first-child) {
+		margin-left: 10px;
+	}
+	.breadcrumbs-wrapper li:not(:first-child):before {
+		margin-right: 10px;
+	}
+}
+/*********** END BREADCRUMBS ***********/
 
 /*********** START HEADER ***********/
 .no-scroll {
@@ -891,7 +945,7 @@
 /*********** START MAP SECTION ***********/
 .map-section {
 	padding-top: 5vw;
-	padding-bottom: 5vw;
+	margin-bottom: 5vw;
 }
 .map-section-grid {
 	display: grid;
@@ -976,7 +1030,7 @@
 @media (max-width: 1200px){ 
 	.map-section {
 		padding-top: 60px;
-		padding-bottom: 60px;
+		margin-bottom: 60px;
 	}
 	.map-section-grid {
 		grid-template-rows: 72px auto;
@@ -1061,6 +1115,7 @@
 .brands-section {
 	background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(13, 66, 89, 0.1) 67.23%);
 	padding-bottom: 4.166vw;
+	margin-top: 5vw;
 	position: relative;
 }
 .brands-section-title {
@@ -1154,6 +1209,7 @@
 @media (max-width: 1200px){ 
 	.brands-section {
 		padding-bottom: 50px;
+		margin-top: 50px;
 	}
 	.brands-section-title {
 		font-size: 22px;
@@ -1337,3 +1393,158 @@
 	}
 }
 /*********** END FOOTER ***********/
+
+/*********** START CONTRACT SECTION ***********/
+.contract-section {
+	padding-bottom: 5.833vw;
+	background-color: #fff;
+}
+.contract-section-title {
+	font-weight: bold;
+	font-size: 2.5vw;
+	line-height: 2.916vw;
+	color: #0D4259;
+	padding-left: 1.25vw;
+	border-left: 0.333vw solid #0085C0;
+	margin-top: 0;
+	margin-bottom: 2.916vw;
+}
+.contract-section-text {
+	font-weight: 300;
+	font-size: 1.166vw;
+	line-height: 2.166vw;
+	color: #000000;
+	margin-top: 0;
+	margin-bottom: 2.916vw;
+}
+.contract-flex {
+	display: flex;
+	align-items: center;
+}
+.contract-flex-left {
+	flex-basis: 50%;
+}
+.contract-flex-title {
+	font-weight: bold;
+	font-size: 1.833vw;
+	line-height: 2.166vw;
+	color: #0D4259;
+	margin-top: 0;
+	margin-bottom: 2.083vw;
+}
+.contract-flex-ul {
+	padding: 0;
+	margin: 0;
+}
+.contract-flex-ul li {
+	list-style-position: inside;
+	color: #0D4259;
+}
+.contract-flex-ul li:not(:last-child) {
+	margin-bottom: 1.25vw;
+}
+.contract-flex-ul span {
+	font-weight: 300;
+	font-size: 1.166vw;
+	line-height: 2.166vw;
+	color: #000000;
+}
+.contact-flex-right {
+	display: flex;
+	flex-direction: column;
+	margin-left: 125px;
+}
+.contact-flex-right-img span {
+	font-size: 10.416vw;
+	color: #0D4259;
+}
+.contact-flex-right-title {
+	font-weight: 500;
+	font-size: 1.166vw;
+	line-height: 2.166vw;
+	color: #000000;
+	max-width: 19.166vw;
+	margin-top: 2.333vw;
+	margin-bottom: 2.333vw;
+}
+.contact-flex-right-text {
+	font-weight: bold;
+	font-size: 1.166vw;
+	line-height: 1.833vw;
+	color: #000000;
+	margin: 0;
+}
+@media (max-width: 1200px) {
+	.contract-section {
+		padding-bottom: 70px;
+	}
+	.contract-section-title {
+		font-size: 30px;
+		line-height: 35px;
+		padding-left: 15px;
+		border-left: 4px solid #0085C0;
+		margin-bottom: 35px;
+	}
+	.contract-section-text {
+		font-size: 14px;
+		line-height: 26px;
+		margin-bottom: 35px;
+	}
+	.contract-flex-title {
+		font-size: 22px;
+		line-height: 26px;
+		margin-bottom: 25px;
+	}
+	.contract-flex-ul li:not(:last-child) {
+		margin-bottom: 15px;
+	}
+	.contract-flex-ul span {
+		font-size: 14px;
+		line-height: 26px;
+	}
+	.contact-flex-right {
+		margin-left: 125px;
+	}
+	.contact-flex-right-img span {
+		font-size: 168px;
+	}
+	.contact-flex-right-title {
+		font-size: 14px;
+		line-height: 26px;
+		max-width: 230px;
+		margin-top: 28px;
+		margin-bottom: 28px;
+	}
+	.contact-flex-right-text {
+		font-size: 14px;
+		line-height: 22px;
+	}
+}
+@media (max-width: 1024px) {
+	.contract-flex {
+		flex-direction: column;
+	}
+	.contact-flex-right {
+		flex-direction: row;
+		align-items: center;
+		margin-top: 38px;
+		margin-left: 0;
+	}
+	.contact-flex-right-img {
+		margin-right: 78px;
+	}
+	.contact-flex-right-title {
+		margin-top: 0;
+	}
+}
+@media (max-width: 768px) {
+	.contact-flex-right-img {
+		margin-right: 19px;
+	}
+}
+@media (max-width: 450px) {
+	.contact-flex-right-img {
+		display: none;
+	}
+}
+/*********** END CONTRACT SECTION ***********/
