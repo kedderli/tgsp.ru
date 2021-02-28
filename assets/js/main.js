@@ -117,3 +117,36 @@ if (document.querySelector('.brand-list')) {
 	});
 }
 // end brands list
+
+// start advantage
+if (document.querySelector('.advantage-section-list')) {
+	$('.advantage-section-list').slick({
+		dots: false,
+		infinite: false,
+		speed: 400,
+		slidesToShow: 3,
+		slidesToScroll: 3,
+		// dotsClass: 'main-hp-slider-nav',
+		prevArrow: '.advantage-prev',
+		nextArrow: '.advantage-next',
+		responsive: [
+			{
+				breakpoint: 1025,
+				settings: {
+					speed: 400,
+					slidesToShow: 2,
+					slidesToScroll: 2,
+				}
+			},
+			{
+				breakpoint: 769,
+				settings: {
+					speed: 400,
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				}
+			}
+		]
+	});
+}
+// end advantage
