@@ -126,14 +126,12 @@ if (document.querySelector('.advantage-section-list')) {
 		speed: 400,
 		slidesToShow: 3,
 		slidesToScroll: 3,
-		// dotsClass: 'main-hp-slider-nav',
 		prevArrow: '.advantage-prev',
 		nextArrow: '.advantage-next',
 		responsive: [
 			{
 				breakpoint: 1025,
 				settings: {
-					speed: 400,
 					slidesToShow: 2,
 					slidesToScroll: 2,
 				}
@@ -141,7 +139,6 @@ if (document.querySelector('.advantage-section-list')) {
 			{
 				breakpoint: 769,
 				settings: {
-					speed: 400,
 					slidesToShow: 1,
 					slidesToScroll: 1,
 				}
@@ -150,3 +147,47 @@ if (document.querySelector('.advantage-section-list')) {
 	});
 }
 // end advantage
+
+// start price
+if (document.querySelector('.price-section-list')) {
+	$('.price-section-list').slick({
+		dots: false,
+		infinite: false,
+		speed: 400,
+		slidesToShow: 6,
+		slidesToScroll: 6,
+		prevArrow: '.price-prev',
+		nextArrow: '.price-next',
+		responsive: [
+			{
+				breakpoint: 1201,
+				settings: {
+					slidesToShow: 5,
+					slidesToScroll: 5,
+				}
+			},
+			{
+				breakpoint: 1025,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 3,
+				}
+			},
+			{
+				breakpoint: 769,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2,
+				}
+			},
+			{
+				breakpoint: 769,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				}
+			}
+		]
+	});
+}
+// end price
