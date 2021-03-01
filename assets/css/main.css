@@ -1843,3 +1843,186 @@
 	}
 }
 /*********** END PRICE SECTION ***********/
+
+/*********** START WORKPROCESS SECTION ***********/
+.workprocess-section {
+	background-color: #0085C0;
+	padding-top: 1.25vw;
+	padding-bottom: 4.166vw;
+}
+.workprocess-section-title {
+	font-weight: bold;
+	font-size: 1.833vw;
+	line-height: 2.166vw;
+	color: #FFFFFF;
+	margin-top: 0;
+	margin-bottom: 1.166vw;
+}
+.workprocess-wrapper {
+	border: 0.25vw solid #FFFFFF;
+	padding-top: 2.916vw;
+	padding-bottom: 2.916vw;
+}
+.workprocess-list {
+	height: 22.916vw;
+	display: flex;
+	justify-content: space-between;
+}
+.workprocess-item {
+	flex-basis: 25%;
+	position: relative;
+}
+.workprocess-icon-wrapper {
+	filter: drop-shadow(0vw 0.333vw 0.833vw rgba(0, 0, 0, 0.15));
+	width: 7.5vw;
+	height: 7.5vw;
+	border-radius: 50%;
+	background-color: #fff;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.workprocess-icon-wrapper span {
+	font-size: 3.333vw;
+	color: #0D4259;
+}
+.workprocess-icon-down {
+	align-self: flex-end;
+}
+.workprocess-icon-down:before {
+	content: "";
+	background-image: url('../svg/line-down.svg');
+	background-size: cover;
+	width: 7.333vw;
+	height: 3.333vw;
+	position: absolute;
+	transform: translate(-60%, -40%);
+}
+.workprocess-icon-up {
+	position: absolute;
+	right: 0;
+}
+.workprocess-icon-up:before {
+	content: "";
+	background-image: url('../svg/line-up.svg');
+	background-size: cover;
+	width: 7.333vw;
+	height: 3.333vw;
+	position: absolute;
+	transform: translate(-45%, -40%);
+}
+.workprocess-text {
+	margin-top: 1.666vw;
+	margin-bottom: 0;
+	font-weight: normal;
+	font-size: 1.166vw;
+	line-height: 2.166vw;
+	text-align: center;
+	color: #FFFFFF;
+}
+@media (max-width: 1200px) {
+	.workprocess-section {
+		padding-top: 15px;
+		padding-bottom: 50px;
+	}
+	.workprocess-section-title {
+		font-size: 22px;
+		line-height: 26px;
+		margin-bottom: 20px;
+	}
+	.workprocess-wrapper {
+		border: 3px solid #FFFFFF;
+		padding-top: 35px;
+		padding-bottom: 35px;
+	}
+	.workprocess-list {
+		height: 275px;
+		height: auto;
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		grid-template-areas: "one . three . five"
+						 	 ". two . four ." 
+	}
+	.workprocess-item-one {
+		grid-area: one;
+	}
+	.workprocess-item-two {
+		grid-area: two;
+	}
+	.workprocess-item-three {
+		grid-area: three;
+	}
+	.workprocess-item-four {
+		grid-area: four;
+	}
+	.workprocess-item-five {
+		grid-area: five;
+	}
+	.workprocess-icon-wrapper {
+		filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.15));
+		width: 90px;
+		height: 90px;
+		border-radius: 50%;
+	}
+	.workprocess-icon-wrapper span {
+		font-size: 40px;
+	}
+	.workprocess-text {
+		margin-top: 20px;
+		font-size: 14px;
+		line-height: 26px;
+	}
+	.workprocess-icon-down:before {
+		transform: translate(-20%, -130%) rotate(25deg);
+		/*transform: translate(-60%, -40%);*/
+	}
+	.workprocess-icon-up:before {
+		transform: translate(-75%, -120%) rotate(-25deg);
+	}
+}
+@media (max-width: 1024px) {
+	.workprocess-list {
+		grid-template-columns: repeat(6, 1fr);
+		grid-row-gap: 30px;
+		grid-template-areas: "one one three three five five"
+						 	 "two two two four four four" 
+	}
+	.workprocess-icon-down:before,
+	.workprocess-icon-up:before {
+		content: none;
+	}
+}
+@media (max-width: 600px) {
+	.workprocess-section {
+		padding-top: 50px;
+	}
+	.workprocess-section-title {
+		margin-bottom: 0;
+	}
+	.workprocess-wrapper {
+		border: none;
+	}
+	.workprocess-list {
+		display: flex;
+		flex-direction: column;
+	}
+	.workprocess-item {
+		display: flex;
+		align-items: center;
+	}
+	.workprocess-text {
+		margin-top: 0;
+		text-align: left;
+	}
+	.workprocess-icon-wrapper {
+		margin-left: 0px;
+		margin-right: 10px;
+		width: 75px;
+		height: 75px;
+	}
+	.workprocess-icon-down {
+		align-self: flex-start;
+	}
+}
+/*********** END WORKPROCESS SECTION ***********/
