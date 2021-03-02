@@ -118,14 +118,14 @@ if (document.querySelector('.advantage-section-list')) {
 		nextArrow: '.advantage-next',
 		responsive: [
 			{
-				breakpoint: 1025,
+				breakpoint: 1200,
 				settings: {
 					slidesToShow: 2,
 					slidesToScroll: 2,
 				}
 			},
 			{
-				breakpoint: 769,
+				breakpoint: 768,
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1,
@@ -148,28 +148,28 @@ if (document.querySelector('.price-section-list')) {
 		nextArrow: '.price-next',
 		responsive: [
 			{
-				breakpoint: 1201,
+				breakpoint: 1200,
 				settings: {
 					slidesToShow: 5,
 					slidesToScroll: 5,
 				}
 			},
 			{
-				breakpoint: 1025,
+				breakpoint: 992,
 				settings: {
 					slidesToShow: 3,
 					slidesToScroll: 3,
 				}
 			},
 			{
-				breakpoint: 769,
+				breakpoint: 768,
 				settings: {
 					slidesToShow: 2,
 					slidesToScroll: 2,
 				}
 			},
 			{
-				breakpoint: 769,
+				breakpoint: 540,
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1,
@@ -198,3 +198,56 @@ if (document.querySelector('.pricelist-section')) {
 	});
 }
 // end price
+
+// start example
+if (document.querySelector('.example-section')) {
+	$('.example-list').slick({
+		dots: false,
+		infinite: false,
+		// arrows: true,
+		speed: 400,
+		variableWidth: true,
+		slidesToShow: 3,
+		slidesToScroll: 3,
+		prevArrow: '.example-prev',
+		nextArrow: '.example-next',
+		responsive: [
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2,
+					// arrows: true,
+				}
+			},
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					// arrows: true,
+				}
+			},
+		]
+	});
+}
+// end example
+
+// start faq
+if (document.querySelector('.faq-section')) {
+	let faqOpenTab = false
+	$(".faq-tabs-item").click(function() {
+		if (this.querySelector('.faq-tab-content').classList.contains('active')) {
+			this.querySelector('.faq-tab-content').classList.remove("active")
+		} else {
+			if (faqOpenTab) {
+				if (faqOpenTab.querySelector('.faq-tab-content').classList.contains('active')) {
+					faqOpenTab.querySelector('.faq-tab-content').classList.remove("active")
+				}
+			}
+			this.querySelector('.faq-tab-content').classList.add("active")
+		}
+		faqOpenTab = this
+	});
+}
+// end faq
