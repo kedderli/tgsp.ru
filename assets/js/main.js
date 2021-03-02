@@ -186,13 +186,16 @@ if (document.querySelector('.pricelist-section')) {
 	$(".pricelist-tabs-item").click(function() {
 		if (this.querySelector('.pricelist-tab-content').classList.contains('active')) {
 			this.querySelector('.pricelist-tab-content').classList.remove("active")
+			this.querySelector('.pricelist-tab').classList.remove("active")
 		} else {
 			if (pricelistOpenTab) {
 				if (pricelistOpenTab.querySelector('.pricelist-tab-content').classList.contains('active')) {
 					pricelistOpenTab.querySelector('.pricelist-tab-content').classList.remove("active")
+					pricelistOpenTab.querySelector('.pricelist-tab').classList.remove("active")
 				}
 			}
 			this.querySelector('.pricelist-tab-content').classList.add("active")
+			this.querySelector('.pricelist-tab').classList.add("active")
 		}
 		pricelistOpenTab = this
 	});
@@ -280,13 +283,16 @@ if (document.querySelector('.faq-section')) {
 	$(".faq-tabs-item").click(function() {
 		if (this.querySelector('.faq-tab-content').classList.contains('active')) {
 			this.querySelector('.faq-tab-content').classList.remove("active")
+			this.querySelector('.faq-tab').classList.remove("active")
 		} else {
 			if (faqOpenTab) {
 				if (faqOpenTab.querySelector('.faq-tab-content').classList.contains('active')) {
 					faqOpenTab.querySelector('.faq-tab-content').classList.remove("active")
+					faqOpenTab.querySelector('.faq-tab').classList.remove("active")
 				}
 			}
 			this.querySelector('.faq-tab-content').classList.add("active")
+			this.querySelector('.faq-tab').classList.add("active")
 		}
 		faqOpenTab = this
 	});

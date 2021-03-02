@@ -30,7 +30,7 @@
 	padding-right: 15px;
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
-	        box-sizing: border-box;
+			box-sizing: border-box;
 }
 .content {
 	padding-top: 55px;
@@ -347,7 +347,7 @@
 .main-hp-slider-foto img {
 	display: block;
 	min-width: 100%;
-    min-height: 100%;
+	min-height: 100%;
 }
 .main-hp-slider-prev,
 .main-hp-slider-next {
@@ -398,8 +398,8 @@
 	background-color: #0D4259;
 	border: 2px solid rgba(255, 255, 255, 0.5);
 	padding: 0;
-    box-sizing: content-box;
-    cursor: auto;
+	box-sizing: content-box;
+	cursor: auto;
 }
 .main-hp-slider-nav button {
 	width: 15px;
@@ -479,7 +479,7 @@
 	grid-template-columns: auto 350px;
 	grid-template-areas: "content cards"
 						 "content cards" 
-                       	 "image cards";
+						 "image cards";
 	grid-gap: 30px;
 }
 .description-section-content {
@@ -624,8 +624,8 @@
 	background-color: #0D4259;
 	border: 2px solid #0085C0;
 	padding: 0;
-    box-sizing: content-box;
-    cursor: auto;
+	box-sizing: content-box;
+	cursor: auto;
 }
 .description-slider-nav button {
 	width: 15px;
@@ -643,7 +643,7 @@
 		grid-gap: 34px;
 		grid-template-areas: "content content"
 							 "content content"  
-	                       	 "image cards";
+							 "image cards";
 	}
 	.description-cards-list {
 		margin-top: 0;
@@ -653,8 +653,8 @@
 		padding: 24px 31px;
 	}
 	.description-cards-image {
-    	margin-right: 33px;
-    }
+		margin-right: 33px;
+	}
 }
 @media (max-width: 991px){  
 	.description-section {
@@ -682,8 +682,8 @@
 }
 @media (max-width: 767px) {
 	.description-section-wrapper {
-    	padding-bottom: 20px;
-    }
+		padding-bottom: 20px;
+	}
 	.description-section {
 		grid-gap: 20px;
 	}
@@ -694,8 +694,8 @@
 	.description-section-title {
 		line-height: 39px;
 		padding-top: 9px;
-    	padding-bottom: 8px;
-    	margin-bottom: 31px;
+		padding-bottom: 8px;
+		margin-bottom: 31px;
 	}
 	.descriptiom-section-image {
 		display: none;
@@ -712,7 +712,7 @@
 		display: none;
 	}
 	.description-cards-list div:not(:last-child) {
-	    margin-bottom: 6px;
+		margin-bottom: 6px;
 	}
 	.description-slider-prev,
 	.description-slider-next {
@@ -905,7 +905,7 @@
 	grid-template-rows: 72px auto;
 	grid-gap: 30px;
 	grid-template-areas: "map-title map-map"
- 						 "map-content map-map"; 
+						 "map-content map-map"; 
 }
 .map-section-title {
 	grid-area: map-title;
@@ -1015,7 +1015,7 @@
 		grid-gap: 10px;
 		grid-template-columns: 330px auto;
 		grid-template-areas: "map-title map-title"
-	 						 "map-content map-map"; 
+							 "map-content map-map"; 
 	}
 	.map-section-title h2 {
 		width: 440px;
@@ -1037,8 +1037,8 @@
 		grid-template-rows: auto;
 		grid-gap: 0;
 		grid-template-areas: "map-title"
-	 						 "map-content"
-	 						 "map-map"; 
+							 "map-content"
+							 "map-map"; 
 	}
 	.map-section-title h2 {
 		line-height: 30px;
@@ -1165,8 +1165,8 @@
 	background-color: #0D4259;
 	border: 2px solid #0085C0;
 	padding: 0;
-    box-sizing: content-box;
-    cursor: auto;
+	box-sizing: content-box;
+	cursor: auto;
 }
 .brands-slider-nav button {
 	width: 15px;
@@ -1223,7 +1223,7 @@
 	}
 	.brands-slider-prev, 
 	.brands-slider-next {
-    	top: 63%;
+		top: 63%;
 	}
 }
 /*********** END BRANDS ***********/
@@ -1548,9 +1548,9 @@
 .advantage-section-item {
 	outline: none;
 	height:auto;
-  	flex: 0 0 auto;
-  	margin-right: 10px;
-  	margin-left: 10px;
+	flex: 0 0 auto;
+	margin-right: 10px;
+	margin-left: 10px;
 }
 .advantage-section-item span {
 	max-width: 350px;
@@ -1708,10 +1708,10 @@
 	margin-top: 24px;
 	margin-bottom: 10px;
 	display: flex;
-  	flex-wrap: wrap;
-  	align-content: flex-start;
-  	align-items: flex-start;
-  	justify-content: center;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	align-items: flex-start;
+	justify-content: center;
 }
 .price-section-item-title span {
 	font-weight: bold;
@@ -1909,7 +1909,7 @@
 		grid-column-gap: 0px;
 		grid-template-columns: 124px 210px 124px 210px 124px;
 		grid-template-areas: "one . three . five"
-						 	 ". two . four ." 
+							 ". two . four ." 
 	}
 	.workprocess-item-one {
 		grid-area: one;
@@ -1944,7 +1944,7 @@
 		grid-template-columns: repeat(6, 1fr);
 		grid-row-gap: 62px;
 		grid-template-areas: "one one two two three three"
-						 	 "four four four five five five" 
+							 "four four four five five five" 
 	}
 	.workprocess-item-four {
 		margin-left: 93px;
@@ -2040,6 +2040,19 @@
 	font-size: 16px;
 	line-height: 14px;
 	color: #FFFFFF;
+	position: relative;
+}
+.pricelist-tab span {
+	position: absolute;
+	font-size: 21px;
+	left: 42px;
+	top: 10px;
+	opacity: 0;
+	transform: translateX(-100%);
+	transition: opacity 0.3s;
+}
+.pricelist-tab.active span {
+	opacity: 1;
 }
 .pricelist-tab:not(:last-child) {
 	border-bottom: 0.5px solid #CFE9F4;
@@ -2176,7 +2189,7 @@
 }
 @media (max-width: 540px) {
 	.pricelist-tab-content.active .pricelist-tab-text {
-	    padding: 10px 10px;
+		padding: 10px 10px;
 	}
 	.pricelist-tab-price {
 		width: 80px;
@@ -2365,6 +2378,9 @@
 		width: 90px;
 		height: 60px;
 	}
+	.example-button {
+		padding: 10px 35px;
+	}
 }
 /*********** END EXAMPLE SECTION **********/
 
@@ -2467,6 +2483,19 @@
 	font-size: 16px;
 	line-height: 14px;
 	color: #FFFFFF;
+	position: relative;
+}
+.faq-tab span {
+	position: absolute;
+	font-size: 21px;
+	left: 42px;
+	top: 10px;
+	opacity: 0;
+	transform: translateX(-100%);
+	transition: opacity 0.3s;
+}
+.faq-tab.active span {
+	opacity: 1;
 }
 .faq-tabs-item:not(:last-child) {
 	border-bottom: 0.5px solid #CFE9F4;
