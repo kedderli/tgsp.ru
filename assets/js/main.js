@@ -4,18 +4,6 @@ $(".header-menu-open").click(function() {
 	$(".header").toggleClass("active");
 	$(".header-menu-drop").toggleClass("open");
 });
-
-$(window).scroll(function() {
-	if($(window).outerWidth() > 992) {
-		if($(window).scrollTop() >= 100) {
-			$(".header-copyright").addClass("d-none");
-			$(".header-menu").addClass("show");
-		} else {
-			$(".header-copyright").removeClass("d-none");
-			$(".header-menu").removeClass("show");
-		}
-	}
-});
 // end header
 
 // start main homepage slider
@@ -50,7 +38,7 @@ if (document.querySelector('.description-cards-list')) {
 				settings: "unslick"
 			},
 			{
-				breakpoint: 769,
+				breakpoint: 768,
 				settings: {
 					dots: true,
 					infinite: false,
@@ -188,6 +176,25 @@ if (document.querySelector('.price-section-list')) {
 				}
 			}
 		]
+	});
+}
+// end price
+
+// start pricelist
+if (document.querySelector('.pricelist-section')) {
+	let pricelistOpenTab = false
+	$(".pricelist-tabs-item").click(function() {
+		if (this.querySelector('.pricelist-tab-content').classList.contains('active')) {
+			this.querySelector('.pricelist-tab-content').classList.remove("active")
+		} else {
+			if (pricelistOpenTab) {
+				if (pricelistOpenTab.querySelector('.pricelist-tab-content').classList.contains('active')) {
+					pricelistOpenTab.querySelector('.pricelist-tab-content').classList.remove("active")
+				}
+			}
+			this.querySelector('.pricelist-tab-content').classList.add("active")
+		}
+		pricelistOpenTab = this
 	});
 }
 // end price
