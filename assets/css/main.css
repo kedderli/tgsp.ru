@@ -2385,13 +2385,14 @@
 	margin-bottom: 35px;
 }
 .certificate-list {
-	/*width: 1074px;*/
-	/*margin-left: auto;
-	margin-right: auto;*/
+	
 }
 .certificate-item {
 	margin-left: 21px;
 	margin-right: 21px;
+}
+.certificate-item a {
+	outline: none;
 }
 .certificate-item img{
 	display: block;
