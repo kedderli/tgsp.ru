@@ -233,6 +233,47 @@ if (document.querySelector('.example-section')) {
 }
 // end example
 
+// start certificate
+if (document.querySelector('.certificate-section')) {
+	$('.certificate-list').slick({
+		dots: false,
+		infinite: false,
+		arrows: true,
+		speed: 400,
+		slidesToShow: 6,
+		slidesToScroll: 6,
+		prevArrow: '.certificate-prev',
+		nextArrow: '.certificate-next',
+		responsive: [
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 5,
+					slidesToScroll: 5,
+					// arrows: true,
+				}
+			},
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 3,
+					// arrows: true,
+				}
+			},
+			{
+				breakpoint: 540,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2,
+					// arrows: true,
+				}
+			},
+		]
+	});
+}
+// end certificate
+
 // start faq
 if (document.querySelector('.faq-section')) {
 	let faqOpenTab = false

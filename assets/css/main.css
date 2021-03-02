@@ -2342,7 +2342,93 @@
 		width: 480px;
 	}
 }
-/*********** END example SECTION **********/
+@media (max-width: 540px) {
+	.example-list {
+		width: 290px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.example-item {
+		width: 290px;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.example-item-list-small {
+		width: 290px;
+	}
+	.example-item-small {
+		width: 90px;
+		height: 60px;
+	}
+	.example-item-small img {
+		display: block;
+		width: 90px;
+		height: 60px;
+	}
+}
+/*********** END EXAMPLE SECTION **********/
+
+/*********** START CERTIFICETE SECTION **********/
+.certificate-section {
+	padding-top: 25px;
+	padding-bottom: 39px;
+	position: relative;
+}
+.certificate-section-title {
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 26px;
+	color: #0D4259;
+	padding-left: 15px;
+	border-left: 4px solid #0085C0;
+	margin-top: 0;
+	margin-bottom: 35px;
+}
+.certificate-list {
+	/*width: 1074px;*/
+	/*margin-left: auto;
+	margin-right: auto;*/
+}
+.certificate-item {
+	margin-left: 21px;
+	margin-right: 21px;
+}
+.certificate-item img{
+	display: block;
+	margin: 0 auto;
+}
+.certificate-prev,
+.certificate-next {
+	border: none;
+	outline: none;
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 40px;
+	height: 38px;
+	position: absolute;
+	top: 57%;
+	transform: translateY(-50%);
+	border-radius: 2px;
+	cursor: pointer;
+}
+.certificate-prev.slick-disabled,
+.certificate-next.slick-disabled {
+	opacity: 0.5;
+	cursor: auto;
+}
+.certificate-prev {
+	left: 0;
+}
+.certificate-next {
+	right: 0;
+}
+.certificate-prev svg,
+.certificate-next svg {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+/*********** END CERTIFICATE SECTION **********/
 
 /*********** START FAQ SECTION ***********/
 .faq-section {
