@@ -182,7 +182,7 @@ if (document.querySelector('.price-section-list')) {
 
 // start pricelist
 if (document.querySelector('.pricelist-section')) {
-	let pricelistOpenTab = false
+	let pricelistOpenTab = document.querySelector('.pricelist-tabs-item')
 	$(".pricelist-tabs-item").click(function() {
 		if (this.querySelector('.pricelist-tab-content').classList.contains('active')) {
 			this.querySelector('.pricelist-tab-content').classList.remove("active")
@@ -279,7 +279,7 @@ if (document.querySelector('.certificate-section')) {
 
 // start faq
 if (document.querySelector('.faq-section')) {
-	let faqOpenTab = false
+	let faqOpenTab = document.querySelector('.faq-tabs-item')
 	$(".faq-tabs-item").click(function() {
 		if (this.querySelector('.faq-tab-content').classList.contains('active')) {
 			this.querySelector('.faq-tab-content').classList.remove("active")
